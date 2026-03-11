@@ -1,92 +1,20 @@
-# MediGuard--Medical-Insurance-Management-System
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+</div>
 
-Medical Insurance Management System (MIMS)
-Project Overview
+# Run and deploy your AI Studio app
 
-The Medical Insurance Management System (MIMS) is a web-based application designed to manage insurance products and streamline the process of policy selection and claim management. The system provides two types of users: customers and administrators.
+This contains everything you need to run your app locally.
 
-Customers can browse available insurance plans, select policies, and submit insurance claims with supporting documents. Administrators can manage insurance plans, view purchased policies, and review or update claim statuses.
+View your app in AI Studio: https://ai.studio/apps/93464927-cc8e-4c1b-91ee-83527523e57a
 
-This system simulates a real-world medical insurance workflow, ensuring proper interaction between users, policies, and claims.
+## Run Locally
 
-Key Features
+**Prerequisites:**  Node.js
 
-Customer Module
-Secure customer login
-Browse available insurance plans
-View selected policies in My Policies
-Submit insurance claims for selected policies
-Upload supporting documents (PDF, JPG, PNG)
-Track claim status (Submitted, Under Review, Approved, Rejected, Settled)
 
-Administrator Module
-
-Secure administrator login
-Manage insurance plans
-Add new insurance products with coverage details and premium
-View policies selected by customers
-Review customer claim submissions
-Update claim status for processing
-
-Insurance Plans Available
-
-The system currently includes several example insurance plans:
-
-Basic Health Shield – Individual coverage with a limit of $50,000 and annual premium of $1,200
-Premium Family Care – Family coverage with a limit of $250,000 and annual premium of $4,500
-Silver Individual Plan – Individual coverage with a limit of $100,000 and annual premium of $2,200
-Gold Family Plus – Family coverage with a limit of $500,000 and annual premium of $8,000
-
-Administrators can also create additional plans dynamically.
-
-System Workflow
-
-Customer logs into the system
-Customer browses available insurance plans
-Customer selects a plan which appears in My Policies
-Customer submits a claim with claim amount, description, and supporting document
-Administrator reviews the claim submission
-Administrator updates the claim status
-Customer can track the updated claim status
-
-Screenshots
-
-Screenshots of the system including:
-Admin creating insurance plans
-Customer browsing plans
-Claim submission and status tracking
-are included in the screenshots folder of this repository.
-
-Frontend
-The frontend provides the user interface for both customers and administrators to interact with the system.
-HTML
-JavaScript
-Tailwind CSS / Bootstrap (for responsive UI design)
-
-The frontend allows users to browse insurance plans, manage policies, and submit claims through an intuitive dashboard.
-
-Backend
-The backend manages the core business logic including insurance plan management, policy tracking, and claim processing.
-Python (FastAPI / Flask / Django) or Node.js (mention the one your system uses)
-
-The backend handles:
-Plan management
-Policy selection
-Claim submission
-Claim status updates
-Database
-
-The system uses a relational database to maintain structured relationships between entities.
-PostgreSQL / MySQL
-Key relational entities include:
-User → Policy → Claim
-
-File Handling
-The system includes a file storage mechanism for claim documents.
-Customers can upload supporting documents when submitting a claim.
-Supported file formats:
-PDF
-JPG
-PNG
-
-Uploaded files are stored and linked to the corresponding claim record in the database.
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`
